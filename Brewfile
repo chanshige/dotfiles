@@ -9,6 +9,7 @@ brew "autoconf"
 brew "cert"
 brew "colordiff"
 brew "cowsay"
+brew "gist"
 brew "go"
 brew "jq"
 brew "nmap"
@@ -21,4 +22,20 @@ brew "selenium-server-standalone"
 brew "telnet"
 brew "tree"
 
+cask 'atom'
+cask 'appcleaner'
+cask 'cyberduck'
+cask 'chromedriver'
 cask 'spotify'
+cask 'docker'
+cask 'vagrant'
+cask 'virtualbox'
+cask 'zoomus'
+cask 'iterm2'
+cask 'sequel-pro'
+cask 'psequel'
+cask 'intellij-idea'
+cask 'google-chrome'
+cask 'firefox'
+cask 'sourcetree'
+cask 'postman'
