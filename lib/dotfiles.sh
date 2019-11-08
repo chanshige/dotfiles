@@ -23,6 +23,8 @@ update_homebrew() {
 bundle_execute() {
   echo 'brew bundle'
   ${brew_path} bundle
+  echo 'brew bundle cleanup'
+  ${brew_path} bundle cleanup
 }
 
 selectable() {
@@ -49,7 +51,9 @@ call_exit() {
 }
 
 ## execute
-selectable 'Starting dotfiles installation? [yes/no]: ' || call_exit 'See you.'
+selectable 'Start execution of the homebrew install? [yes/no]: ' || call_exit 'See you.'
 exists_homebrew || install_homebrew
 update_homebrew
-call_exit 'completed.'
+selectable 'Next execution of the bundle install? [yes/no]: ' || call_exit 'See ya.'
+bundle_execute
+call_exit 'The homebrew and application has been installed.'
