@@ -22,6 +22,7 @@ brew "selenium-server-standalone"
 brew "telnet"
 brew "tree"
 
+# Application
 cask 'atom'
 cask 'appcleaner'
 cask 'cyberduck'
@@ -30,7 +31,6 @@ cask 'spotify'
 cask 'docker'
 cask 'vagrant'
 cask 'virtualbox'
-cask 'zoomus'
 cask 'iterm2'
 cask 'sequel-pro'
 cask 'psequel'
@@ -39,3 +39,4 @@ cask 'google-chrome'
 cask 'firefox'
 cask 'sourcetree'
 cask 'postman'
+cask 'zoomus'
