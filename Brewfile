@@ -21,6 +21,7 @@ brew "ruby-build"
 brew "selenium-server-standalone"
 brew "telnet"
 brew "tree"
+brew "wget"
 
 # Application
 cask 'atom'
