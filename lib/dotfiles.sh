@@ -1,4 +1,8 @@
 #!/bin/sh
+##############################
+# author: shigeki tanaka <dev@shigeki.tokyo>
+# since: 20191108
+##############################
 
 readonly brew_path="/usr/local/bin/brew"
 

@@ -24,6 +24,7 @@ brew "tree"
 
 # Application
 cask 'atom'
+cask 'authy'
 cask 'appcleaner'
 cask 'cyberduck'
 cask 'chromedriver'
