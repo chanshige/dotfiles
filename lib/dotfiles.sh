@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 ##############################
 # author: shigeki tanaka <dev@shigeki.tokyo>
 # since: 20191108
@@ -7,6 +7,7 @@
 readonly brew_path="/usr/local/bin/brew"
 
 exists_homebrew() {
+  # shellcheck disable=SC2046
   return $(type "brew" >/dev/null 2>&1)
 }
 
