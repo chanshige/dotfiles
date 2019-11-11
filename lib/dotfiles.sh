@@ -51,14 +51,14 @@ selectable() {
 }
 
 call_exit() {
-  echo "${1}"
+  printf "%s.\n" "${1}"
   exit 0
 }
 
 ## execute
-selectable 'Start execution of the homebrew install? [yes/no]: ' || call_exit 'See you.'
+selectable 'Start execution of the homebrew install? [yes/no]: ' || call_exit 'See you'
 exists_homebrew || install_homebrew
 update_homebrew
-selectable 'Next execution of the bundle install? [yes/no]: ' || call_exit 'See ya.'
+selectable 'Next execution of the bundle install? [yes/no]: ' || call_exit 'See ya'
 bundle_execute
 call_exit 'The homebrew and application has been installed.'
