@@ -48,3 +48,4 @@ cask 'zoomus'
 # Office 365
 cask 'microsoft-excel'
 cask 'microsoft-word'
+cask 'microsoft-powerpoint'
