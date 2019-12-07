@@ -15,6 +15,11 @@ install_homebrew() {
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 }
 
+install_composer() {
+  curl -sS https://getcomposer.org/installer | php
+  mv composer.phar /usr/local/bin/composer
+}
+
 update_homebrew() {
   echo 'brew update'
   ${brew_path} update
@@ -61,4 +66,6 @@ exists_homebrew || install_homebrew
 update_homebrew
 selectable 'Next execution of the bundle install? [yes/no]: ' || call_exit 'See ya'
 bundle_execute
+selectable 'Next execution of the composer install? [yes/no]: ' || call_exit 'See ya'
+install_composer
 call_exit 'The homebrew and application has been installed.'
