@@ -45,6 +45,7 @@ cask 'firefox'
 cask 'sourcetree'
 cask 'postman'
 cask 'zoomus'
+cask 'gyazo'
 
 # Office 365
 cask 'microsoft-excel'
